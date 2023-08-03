@@ -34,6 +34,7 @@ body header nav ul .navButton:hover {
   box-shadow: 3px 0px 5px white, -3px 0px 5px white, 0px 3px 5px white, 0px -3px 5px white;
 }
 body header .effectNav {
+  opacity: 1;
   height: 150px;
   background: #000000;
   background: linear-gradient(180deg, #000000 0%, #000000 50%, rgba(0, 0, 0, 0) 100%);
@@ -48,14 +49,33 @@ body .parent {
   z-index: -1;
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 550px;
   top: 100px;
+}
+body .parent .textName {
+  color: white;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 700;
+  top: 72%;
+  word-spacing: 40px;
+  letter-spacing: 10px;
+}
+body .parent .reflect {
+  position: absolute;
+  top: 71%;
+  height: 10%;
+  width: 100%;
+}
+body .parent .reflect .reverserLetter {
+  transform: rotateX(110deg) scale(1, 2.2);
+  opacity: 38%;
 }
 body .child {
   position: absolute;
   width: 50%;
   height: 50%;
-  top: 18%;
+  top: 14%;
   left: 27%;
   opacity: 1;
 }
@@ -66,13 +86,13 @@ body .effectReverse {
 }
 body .propos {
   height: 2000px;
-  background-color: rgba(255, 255, 255, 0.33);
+  background-color: #ffffff;
 }
 .parallax {
   background-image: url("img/skyNight2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
-  height: 400px;
+  background-size: 50%;
+  height: 600px;
 }
