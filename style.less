@@ -89,16 +89,70 @@ body{
         background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
     }
     section{
-        margin: 80px 0px;
+        margin: 50px 0px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         .propos{
-            height: 800px;
-            width: 80%;
-            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 1200px;
+            width: 1600px;
+            background-color: rgba(255, 255, 255, 0.853);
             border-radius: 25px;
+            .separateur{
+                margin: 25px 0 0 60px;
+                width: 100%;
+                height: 300px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                .imgPhoto{
+                    background-image: url(img/chat.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                .photo{
+                    width: 400px;
+                    height: 200px;
+                    box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.5),-3px 0px 5px rgba(0, 0, 0, 0.5),0px 3px 5px rgba(0, 0, 0, 0.5),0px -3px 5px rgba(0, 0, 0, 0.5);
+                    border-radius: 100%;
+                    background-color: white;
+                }
+                .presentation{
+                    margin-top: 80px;
+                    p{
+                        margin: 0% 5%;
+                        width: 80%;
+                        text-align: left;
+                        font-size: large;
+                    }
+                }
+                
+            }
+            .cursus{
+                width: 90%;
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                .cvMignon{
+                    width: 20%;
+                    height: 100%;
+                    background-color: aqua;
+                }
+                .cv{
+                    .section {
+                        margin-bottom: 20px;
+                        .info {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+                
+            }
         }
     }
     
